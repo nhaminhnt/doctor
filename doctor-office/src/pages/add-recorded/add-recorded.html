@@ -1,0 +1,40 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary" text-center>
+    <ion-title>Add a medicine record</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <ion-item>
+      <ion-label>Type of record</ion-label>
+      <ion-select [(ngModel)]="type"  >
+        <ion-option value="e" >Report</ion-option>
+        <ion-option value="q" >Pescription</ion-option>
+        <ion-option value="f" >Invoice</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label >Title</ion-label>
+      <ion-input type="text" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Record created on</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Add a record</ion-label>
+      <ion-select [(ngModel)]="recording" interface="action-sheet">
+        <ion-option value="we">Take a photo</ion-option>
+        <ion-option value="t">Up load from garelly</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+  <div class="button-upload" text-center>
+    <button ion-button large color="secondary" (click)="goUploadRecord()">Upload record</button>
+  </div>
+</ion-content>

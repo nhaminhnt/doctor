@@ -1,0 +1,36 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary" text-center>
+    <ion-title>Ask a question</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content >
+<div>
+  <ion-item>
+    <ion-label>Problem type-Treatment pref</ion-label>
+    <ion-select [(ngModel)]="problemtype"  >
+      <ion-option value="1" >Tooth & Mouth</ion-option>
+      <ion-option value="q" >Physiotherapy</ion-option>
+      <ion-option value="d" >Ear, Nose, Throat</ion-option>
+      <ion-option value="f" >General Health</ion-option>
+      <ion-option value="e" >Digestive Problems</ion-option>
+      <ion-option value="g" >Child Health</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label >Title</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Description</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+</div>
+<div text-center>
+  <button class="button-submit"  ion-button round large color="secondary" (click)="goSubmit()">Sent</button>
+</div>
+</ion-content>

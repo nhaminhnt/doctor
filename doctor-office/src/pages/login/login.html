@@ -1,0 +1,55 @@
+
+<ion-content  >
+  <div class="background-1" style="height: 100%;"> 
+  <div class="content" text-center>
+    <img src="../../assets/imgs/medicine-box-icon.png" alt="">
+    <form>
+      <ion-item>
+        <ion-label floating>
+          <ion-icon ios="ios-contact-outline" md="md-contact" item-left></ion-icon>
+          Username:
+        </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>
+          <ion-icon ios="ios-lock-outline" md="md-lock" item-left></ion-icon>
+          Password:
+        </ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <br/>
+      <ion-row>
+        <ion-col text-end>
+          <a (click)="openResetPassword()"> Fogot password ?</a>
+        </ion-col>
+      </ion-row>
+
+      <div padding>
+        <ion-col>
+          <button col-8 large ion-button color="light" round (click)="goToHome()" >
+            Sign in
+          </button>
+        </ion-col>
+      </div>
+
+      <div padding style="margin-top: 15%">
+        <ion-col>
+          <button col-8 ion-button round >
+            Login with Facebook
+          </button>
+        </ion-col>
+      </div>
+
+      <ion-row text-center>
+        <ion-col class="signup">
+          <span>Not have a account?</span>
+          <a (click)="goToSignup()">Sing up </a>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+  </div>
+
+</ion-content>

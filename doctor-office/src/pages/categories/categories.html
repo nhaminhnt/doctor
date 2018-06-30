@@ -1,0 +1,55 @@
+< <ion-header>
+
+  <ion-navbar color="secondary" text-center>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Categories</ion-title>
+  </ion-navbar>
+
+  </ion-header>
+
+
+  <ion-content>
+    <div class="content">
+      <ion-list>
+        <ion-item (click)="goToBookAnPointmentPage()">
+          <ion-icon name="ios-calendar-outline" item-start></ion-icon>
+          <h2>Book an appointment</h2>
+          <br/>
+          <p>Find doctor clinics, hospital and more</p>
+          <ion-icon name="md-arrow-forward" item-end></ion-icon>
+        </ion-item>
+        <ion-item (click)="goToChatWithDoctorPage()">
+          <ion-icon name="ios-chatboxes-outline" item-start></ion-icon>
+          <h2>Chat with doctor</h2>
+          <br/>
+          <p>Get a response with in 5 minutes!</p>
+          <ion-icon name="md-arrow-forward" item-end></ion-icon>
+        </ion-item>
+        <ion-item (click)="goToAskAQuestionPage()">
+          <ion-icon name="ios-help-circle-outline" item-start></ion-icon>
+          <h2>Ask a question</h2>
+          <br/>
+          <p>Get answer from doctor and experts</p>
+          <ion-icon name="md-arrow-forward" item-end></ion-icon>
+        </ion-item>
+        <ion-item (click)="goToAddAMedicineRecordPage()">
+          <ion-icon name="ios-mic-outline" item-start></ion-icon>
+          <h2>Add a medical record</h2>
+          <br/>
+          <p>Upload prescriptions, reports and more</p>
+          <ion-icon name="md-arrow-forward" item-end></ion-icon>
+        </ion-item>
+        <ion-item (click)="goToSetMedicineReminderPage()">
+          <ion-icon name="ios-alarm-outline" item-start></ion-icon>
+          <h2>Set medicine reminder</h2>
+          <br/>
+          <p>Get alerts so you never miss a done</p>
+          <ion-icon name="md-arrow-forward" item-end></ion-icon>
+
+        </ion-item>
+
+      </ion-list>
+    </div>
+  </ion-content>

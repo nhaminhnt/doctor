@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar color="secondary" text-center>
+    <ion-title>Book an pointment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <div>
+    <ion-item>
+      <ion-label>Select Doctor</ion-label>
+      <ion-select [(ngModel)]="Doctor">
+        <ion-option value="z">Jame Bonse</ion-option>
+        <ion-option value="p">Jonh Camaron</ion-option>
+        <ion-option value="o">Maria Rose</ion-option>
+        <ion-option value="y">Chris Hemsworth</ion-option>
+        <ion-option value="i">Robert Downey</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Select Departments</ion-label>
+      <ion-select [(ngModel)]="Departments">
+        <ion-option value="e">Doctors</ion-option>
+        <ion-option value="f">Dentists</ion-option>
+        <ion-option value="j">Alternative Medicine Doctors</ion-option>
+        <ion-option value="w">Therapists & Nutritinonists</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Time</ion-label>
+      <ion-datetime displayFormat="HH:mm A" [(ngModel)]="myTime"></ion-datetime>
+    </ion-item>
+  </div>
+  <div text-center class="button-confirm">
+    <button ion-button large round color="secondary" (click)="goConfirm()">Confirm</button>
+  </div>
+</ion-content>
